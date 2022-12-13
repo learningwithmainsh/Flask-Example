@@ -113,7 +113,7 @@ always{
     
     emailext attachLog: true, to: 'mnshkmrpnd@gmail.com,manishkumarpndey144@gmail.com',
              subject: "Pipeline Build is over .. Build # is ..${env.BUILD_NUMBER} and Build status is.. ${currentBuild.result}.",
-             body: "Pipeline Build is over .. Build number  # is ..${env.BUILD_NUMBER} and Build status is.. ${currentBuild.result}.",
+             body: "${JOB_NAME}   is over .. Build number  # is ..${env.BUILD_NUMBER} and Build status is.. ${currentBuild.result}.",
              replyTo: 'manishkumarpandey144@gmail.com@gmail.com'
    }
 
